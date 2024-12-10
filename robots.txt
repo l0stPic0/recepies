@@ -1,0 +1,7 @@
+   User-agent: *
+   Allow: /js/
+   Allow: /css/
+   Allow: /
+
+   Sitemap: https://l0stpic0.github.io/recepies/index.html
+   
