@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Кулинарный сайт с рецептами, отзывами и возможностью делиться своими кулинарными шедеврами.">
+    <meta name="keywords" content="рецепты, кулинария, еда, блюда, кулинарные советы, домашняя кухня">
+    <meta name="author" content="Кулинарные Рецепты">
+    <meta property="og:title" content="Кулинарные Рецепты">
+    <meta property="og:description" content="Кулинарный сайт с рецептами, отзывами и возможностью делиться своими кулинарными шедеврами.">
+    <meta property="og:image" content="img/borsch.png">
+    <meta property="og:url" content="https://www.example.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Кулинарные Рецепты">
+    <meta name="twitter:description" content="Кулинарный сайт с рецептами, отзывами и возможностью делиться своими кулинарными шедеврами.">
+    <meta name="twitter:image" content="img/borsch.png">
+    <title>Кулинарные Рецепты</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script>
+    <title>Кулинарные Рецепты</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Кулинарные Рецепты</h1>
+        <nav>
+            <ul>
+                
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="recipes.html">Рецепты</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+                <li><a href="faq.html">Часто задаваемые вопросы</a></li>
+                <li><a href="#" onclick="openModal('loginModal')">Вход</a></li>
+                <li><a href="#" onclick="openModal('registerModal')">Регистрация</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Добро пожаловать на наш сайт!</h2>
+            <div class="welcome-content">
+                <img src="img/borsch.png" alt="" class="welcome-image">
+                <p>Здесь вы найдете множество вкусных рецептов и сможете поделиться своими кулинарными шедеврами. это уникальная коллекция рецептов простых и вкусных блюд с пошаговыми фото и видео, которая поможет вам готовить вкусную еду в любое время дня и ночи 365 дней в году. На страницах нашего сайта вас ждут интересные рецепты блюд домашней кухни, описания продуктов питания, познавательные кулинарные статьи, а также возможность знакомства с кулинарными традициями самых разных народов мира.</p>
+            </div>
+        </section>
+
+        <section id="recipes">
+            <h2>Популярные Рецепты</h2>
+            <div class="slider">
+                <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                <div class="slides">
+                    <div class="slide"><img src="img/borsch.png" alt="Борщ"></div>
+                    <div class="slide"><img src="img/pie.jpg" alt="Пирог с яблоками"></div>
+                    <div class="slide"><img src="img/pasta.png" alt="Паста"></div>
+                    <div class="slide"><img src="img/salad.png" alt="Салат"></div>
+                    <div class="slide"><img src="img/soup.png" alt="Суп"></div>
+                    <div class="slide"><img src="img/dessert.png" alt="Десерт"></div>
+                </div>
+                <button class="next" onclick="changeSlide(1)">&#10095;</button>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>О нас</h2>
+            <div class="about-content">
+                <img src="img/schef.jpeg" alt="Шеф-повар" class="about-image">
+           
+              <p>Мы — команда кулинаров, которые любят готовить и делиться рецептами на любой случай. У нас вы найдете рецепты закусок, основных блюд и десертов, от простых до сложных. Мы делимся полезными советами по кулинарии и хитростями, которые помогут вам стать настоящим мастером на кухне.
+                    Присоединяйтесь к нашему сообществу, где вы можете делиться своими рецептами и получать отзывы от других кулинаров. Мы ценим ваше мнение и всегда готовы услышать ваши идеи и пожелания. Наша цель — вдохновить людей на создание вкусных блюд и расширить их кулинарные горизонты. Мы собираем рецепты со всего мира, от традиционных до современных, чтобы каждый мог найти что-то по своему вкусу.
+                    Мы верим в силу кулинарии как способа объединения людей. Каждое блюдо — это история, которую мы можем рассказать. Исследуйте новые горизонты вместе с нами, открывайте традиции других культур через их кухню и создавайте незабываемые моменты за столом.
+                    Не упустите возможность стать частью нашего кулинарного сообщества! Подписывайтесь на нас в социальных сетях, участвуйте в обсуждениях и делитесь своими успехами на кухне. Давайте вместе вдохновлять друг друга на создание вкусных шедевров! 
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Кулинарные Рецепты. Все права защищены.</p>
+    </footer>
+
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('loginModal')">&times;</span>
+            <h2>Вход в систему</h2>
+            <form onsubmit="return handleLogin(event)">
+                <label for="login_username">Логин:</label><br>
+                <input type="text" id="login_username" required><br><br>
+
+                <label for="login_password">Пароль:</label><br>
+                <input type="password" id="login_password" required><br><br>
+
+                <input type="submit" value="Войти">
+            </form>
+        </div>
+    </div>
+
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('registerModal')">&times;</span>
+            <h2>Регистрация</h2>
+            <form onsubmit="return handleRegister(event)">
+                <label for="new_username">Логин:</label><br>
+                <input type="text" id="new_username" required><br><br>
+
+                <label for="new_password">Пароль:</label><br>
+                <input type="password" id="new_password" required><br><br>
+
+                <label for="register_email">Email:</label><br>
+                <input type="email" id="register_email" required><br><br>
+
+                <input type="submit" value="Зарегистрироваться">
+            </form>
+        </div>
+    </div>
+
+    <div id="notificationModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('notificationModal')">&times;</span>
+            <h2 id="notificationTitle"></h2>
+            <p id="notificationMessage"></p>
+        </div>
+    </div>
+        
+</body>
+</html>

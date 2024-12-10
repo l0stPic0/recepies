@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Кулинарный сайт с рецептами, отзывами и возможностью делиться своими кулинарными шедеврами.">
+    <meta name="keywords" content="рецепты, кулинария, еда, блюда, кулинарные советы, домашняя кухня">
+    <meta name="author" content="Кулинарные Рецепты">
+    <meta property="og:title" content="Кулинарные Рецепты">
+    <meta property="og:description" content="Кулинарный сайт с рецептами, отзывами и возможностью делиться своими кулинарными шедеврами.">
+    <meta property="og:image" content="img/borsch.png">
+    <meta property="og:url" content="https://www.example.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Кулинарные Рецепты">
+    <meta name="twitter:description" content="Кулинарный сайт с рецептами, отзывами и возможностью делиться своими кулинарными шедеврами.">
+    <meta name="twitter:image" content="img/borsch.png">
+    <title>Кулинарные Рецепты</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script>
+    <title>Кулинарные Рецепты</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Кулинарные Рецепты</h1>
+        <nav>
+            <ul>
+                
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="recipes.html">Рецепты</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+                <li><a href="faq.html">Часто задаваемые вопросы</a></li>
+                <li><a href="#" onclick="openModal('loginModal')">Вход</a></li>
+                <li><a href="#" onclick="openModal('registerModal')">Регистрация</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <main>
+        <section id="contact">
+            <h2>Контакты</h2>
+            <div class="contact-info">
+                <p><strong>Телефон:</strong> +7 (123) 456-78-90</p>
+                <p><strong>Email:</strong> info@example.com</p>
+            </div>
+            <div class="contact-form">
+                <h3>Свяжитесь с нами</h3>
+                <form id="contactForm">
+                    <label for="name">Имя:</label>
+                    <input type="text" id="name" name="name" required>
+        
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+        
+                    <label for="message">Сообщение:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+        
+                    <input type="submit" value="Отправить">
+                </form>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Кулинарные Рецепты. Все права защищены.</p>
+    </footer>
+
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('loginModal')">&times;</span>
+            <h2>Вход в систему</h2>
+            <form onsubmit="return handleLogin(event)">
+                <label for="login_username">Логин:</label><br>
+                <input type="text" id="login_username" required><br><br>
+
+                <label for="login_password">Пароль:</label><br>
+                <input type="password" id="login_password" required><br><br>
+
+                <input type="submit" value="Войти">
+            </form>
+        </div>
+    </div>
+
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('registerModal')">&times;</span>
+            <h2>Регистрация</h2>
+            <form onsubmit="return handleRegister(event)">
+                <label for="new_username">Логин:</label><br>
+                <input type="text" id="new_username" required><br><br>
+
+                <label for="new_password">Пароль:</label><br>
+                <input type="password" id="new_password" required><br><br>
+
+                <label for="register_email">Email:</label><br>
+                <input type="email" id="register_email" required><br><br>
+
+                <input type="submit" value="Зарегистрироваться">
+            </form>
+        </div>
+    </div>
+
+    <div id="notificationModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('notificationModal')">&times;</span>
+            <h2 id="notificationTitle"></h2>
+            <p id="notificationMessage"></p>
+        </div>
+    </div>
+        
+</body>
+</html>
