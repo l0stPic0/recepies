@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://www.example.com/index.html</loc>
+        <loc>https://l0stpic0.github.io/recepies/index.html</loc>
         <priority>1.00</priority>
     </url>
     <url>
-        <loc>https://www.example.com/recipes.html</loc>
+        <loc>https://l0stpic0.github.io/recepies/recipes.html</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://www.example.com/about.html</loc>
+        <loc>https://l0stpic0.github.io/recepies/about.html</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://www.example.com/contact.html</loc>
+        <loc>https://l0stpic0.github.io/recepies/contact.html</loc>
+        <priority>0.80</priority>
+    </url>
+       <url>
+        <loc>https://l0stpic0.github.io/recepies/faq.html/loc>
         <priority>0.80</priority>
     </url>
 </urlset>
